@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>Trained Model : </h3>
+    <br/>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <a href="{{ url_for('cats_vs_dogs') }}">
+                <img style="height: 250px;width: 100%" src="{{ url_for('static', filename='img/1.jpg') }}" />
+                <h4 style="margin-top: 20px" class="btn btn-block btn-lg btn-info">Dog vs Cats</h4>
+            </a>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <a href="{{ url_for('facial') }}">
+                 <img style="height: 250px;width: 100%" src="{{ url_for('static', filename='img/2.jpeg') }}" />
+                 <h4 style="margin-top: 20px" class="btn btn-block btn-lg btn-success">Facial recognition</h4>
+            </a>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <a href="{{ url_for('vgg16') }}">
+                <img style="height: 250px;width: 100%" src="{{ url_for('static', filename='img/3.jpg') }}" />
+                <h4 style="margin-top: 20px" class="btn btn-block btn-lg btn-primary">VGG 16</h4>
+            </a>
+        </div>
+    </div>
+
+    <br/><br/>
+    <div class="jumbotron">
+        <p class="lead">This project was made by <b>Hosni Mansour</b> and <b>Eya Gassem</b>. We used Machine Learning to make a Deep Convolutional Neural Network using TensorFlow and Keras to classify images.</p>
+    </div>
+
+{% endblock %}

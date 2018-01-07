@@ -1,0 +1,39 @@
+<!doctype html>
+<title>ML CNN Project</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='js/bootstrap.min.js') }}">
+<div class=container>
+    <br/><br/>
+    <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('cats_vs_dogs') }}">Dogs Vs Cats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('facial') }}">Facial recognition (simpson)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('vgg16') }}">VGG-16</a>
+            </li>
+          </ul>
+        </nav>
+        <h2 style="color: #0080ff!important;">ML Project (ISAMM)</h2>
+    </div>
+    <br/>
+    <div class=metanav></div>
+    <br/>
+    {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>{% endfor %}
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+</div>
+<div class="push"></div>
+<footer style="margin-top: 100px" class="footer text-center">
+    <p>&copy; Made by <b><a href="https://www.linkedin.com/in/hosni-mansour-b4639793/" target="_blank">Hosni Mansour</a></b> and <b><a href="https://www.linkedin.com/in/eya-gassem/" target="_blank">Eya Gassem</a></b> - 2017. <a href="http://www.isa2m.rnu.tn" target="_blank">ISAMM</a>.</p>
+</footer>

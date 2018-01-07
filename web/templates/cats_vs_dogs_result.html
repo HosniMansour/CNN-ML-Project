@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>Dogs VS Cats : </h3>
+    <br/>
+    <div class="text-center">
+        <img style="width: 90%;" src="/images/{{ filename }}" />
+        <br />
+        <hr />
+        I guess you have uploaded a <b>{{ predicted_label }}</b> picture, as the probability of this being a dog picture is
+        {{ probability_of_dog }}
+        <hr />
+        <a class="btn btn-warning" href="{{ url_for('cats_vs_dogs') }}">Try another picture</a>
+    </div>
+{% endblock %}

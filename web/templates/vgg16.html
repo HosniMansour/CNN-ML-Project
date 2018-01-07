@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>VGG-16 : </h3>
+    <br/>
+    <p>Upload your picture and we will try to what it is using VGG16 classifier</p>
+    <br/>
+    <form class="text-center" method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+          <br/><br/>
+          <input class="btn btn-info" type=submit value=Upload>
+    </form>
+{% endblock %}

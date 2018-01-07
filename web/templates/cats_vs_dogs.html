@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>Dogs VS Cats : </h3>
+    <br/>
+    <p>Upload your Cat or Dog picture and we will try to guess it is a Cat or a Dog :D</p>
+    <br/>
+    <form class="text-center" method=post enctype=multipart/form-data>
+          <input type=file name=file>
+          <br/><br/>
+          <input class="btn btn-info" type=submit value=Upload>
+    </form>
+{% endblock %}

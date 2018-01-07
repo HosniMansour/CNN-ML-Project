@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>VGG-16 : </h3>
+    <br/>
+    <div class="text-center">
+        <img style="width: 90%;" src="/images/{{ filename }}" />
+        <br />
+        <hr />
+        Below is my top 3 guesses of what is inside your picture:
+        <br/><br/>
+        <ol>
+        {% for pred in top3 %}
+            <li><b>{{ pred[1] }}</b> ({{ pred[2] }})</li>
+        {% endfor %}
+        </ol>
+        <hr />
+        <a class="btn btn-warning" href="{{ url_for('vgg16') }}">Try another picture</a>
+    </div>
+{% endblock %}

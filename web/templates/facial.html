@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h3>Facial recognition : </h3>
+    <br/>
+    <p>Upload a picture and we will try to guess it </p>
+    <br/>
+    <form class="text-center" method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+          <br/><br/>
+          <input class="btn btn-info" type=submit value=Upload>
+    </form>
+    <br/>
+    <h2>The simpson characters : </h2>
+    <br/>
+    <br/>
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/1.jpg') }}" />
+                <p style="margin-top: 20px" >abraham_grampa</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/2.jpg') }}" />
+                <p style="margin-top: 20px">apu</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/3.jpg') }}" />
+                <p style="margin-top: 20px" >bart_simpson</p>
+            </div>
+
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/4.jpg') }}" />
+                <p style="margin-top: 20px" >charles</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/5.jpg') }}" />
+                <p style="margin-top: 20px">chief_wiggum</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/6.jpg') }}" />
+                <p style="margin-top: 20px" >comic_book_guy</p>
+            </div>
+
+            <!-- Second Line ----->
+
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/7.jpg') }}" />
+                <p style="margin-top: 20px" >edna_krabappel</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/8.jpg') }}" />
+                <p style="margin-top: 20px">homer_simpson</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/9.jpg') }}" />
+                <p style="margin-top: 20px" >kent_brockman</p>
+            </div>
+
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/10.jpg') }}" />
+                <p style="margin-top: 20px" >krusty_the_clown</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/11.jpg') }}" />
+                <p style="margin-top: 20px">lisa_simpson</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/12.jpg') }}" />
+                <p style="margin-top: 20px" >marge_simpson</p>
+            </div>
+
+            <!-- Third Line ----->
+
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/13.jpg') }}" />
+                <p style="margin-top: 20px" >milhouse</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/14.jpg') }}" />
+                <p style="margin-top: 20px">moe_szyslak</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/15.jpg') }}" />
+                <p style="margin-top: 20px" >ned_flanders</p>
+            </div>
+
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/16.jpg') }}" />
+                <p style="margin-top: 20px" >nelson_muntz</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/17.jpg') }}" />
+                <p style="margin-top: 20px">principal_skinner</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img style="height: 100px;" src="{{ url_for('static', filename='img/simpson/18.jpg') }}" />
+                <p style="margin-top: 20px" >sideshow_bob</p>
+            </div>
+
+        </div>
+
+{% endblock %}
